@@ -1,0 +1,27 @@
+.Static-container{
+    /* border: 2px solid red; */
+    margin: auto;
+    width: 80%;
+    height: 600px;
+    background-color: #EDF6F6;
+    
+}
+
+.data-display{
+    /* border: 2px solid red; */
+    width: 50%;
+    margin: auto;
+    background-color: #F8DF8C;
+    border-radius: 10px;
+    height: 100px;
+
+}
+ul,li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.controls{
+    /* border: 5px solid red; */
+    display: flex;
+}

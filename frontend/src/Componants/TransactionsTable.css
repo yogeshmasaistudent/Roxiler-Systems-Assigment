@@ -1,0 +1,66 @@
+.transactions-container {
+    margin: 20px;
+}
+
+.transactions-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.month-select {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #F8DF8C;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.transactions-table th,
+.transactions-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+       background-color: #F8DF8C;
+}
+
+.transactions-table th {
+    background-color: #F8DF8C;
+}
+
+.transaction-image {
+    width: 50px;
+    height: 50px;
+}
+
+.pagination-controls {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    border:"1px solid red"
+}
+
+.pagination-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pagination-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
