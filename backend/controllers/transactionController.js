@@ -6,7 +6,9 @@ dotenv.config();
 // Initialize Database
 const initializeDatabase = async (req, res) => {
   try {
-    const { data } = await axios.get(process.env.THIRD_PARTY_API_URL);
+    const { data } = await axios.get(
+      " https://s3.amazonaws.com/roxiler.com/product_transaction.json"
+    );
     await Transaction.deleteMany({});
     await Transaction.insertMany(data);
     res.status(200).json({ message: "Database initialized with seed data" });
