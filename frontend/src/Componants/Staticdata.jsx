@@ -28,7 +28,7 @@ const Staticdata = () => {
     try {
       const monthNumber = getMonthNumber(month);
       const res = await fetch(
-        `http://localhost:8080/api/statistics?month=${monthNumber}`
+        `https://roxiler-systems-assigment-1.onrender.com/api/statistics?month=${monthNumber}`
       );
       const data = await res.json();
       setStaticData(data);

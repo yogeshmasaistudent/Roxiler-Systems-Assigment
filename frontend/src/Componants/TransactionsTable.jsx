@@ -30,7 +30,7 @@ function TransactionsTable() {
     try {
       const monthNumber = month ? getMonthNumber(month) : "";
       const res = await fetch(
-        `http://localhost:8080/api/transactions?${
+        `https://roxiler-systems-assigment-1.onrender.com/api/transactions?${
           monthNumber ? `month=${monthNumber}&` : ""
         }page=${page}`
       );

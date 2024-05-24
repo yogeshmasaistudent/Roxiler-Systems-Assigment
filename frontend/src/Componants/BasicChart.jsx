@@ -10,7 +10,7 @@ const BasicChart = () => {
   const fetchBarChartData = async (month) => {
     try {
       const response = await axios.get(
-        `http://localhost:8080/api/bar-chart?month=${month}`
+        `https://roxiler-systems-assigment-1.onrender.com/api/bar-chart?month=${month}`
       );
       console.log("API response data:", response.data); // Log the data for debugging
       setBarChartData(response.data);
