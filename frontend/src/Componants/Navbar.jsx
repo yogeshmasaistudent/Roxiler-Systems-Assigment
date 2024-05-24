@@ -9,7 +9,7 @@ function Navbar() {
         Roxiler Systems
       </NavLink>
       <NavLink to="/dashboard" activeClassName="active">
-        Dashboard
+        PieChart
       </NavLink>
       <NavLink to="/static" activeClassName="active">
         Static
