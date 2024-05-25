@@ -1,33 +1,43 @@
 # MERN Stack Transaction Dashboard
 
-This project is a MERN (MongoDB, Express, React, Node.js) stack application that provides a comprehensive transaction dashboard. The application allows users to view and interact with transaction data through various APIs and frontend components. It includes features such as data initialization, transaction listing, statistical analysis, and data visualization.
+This project is a MERN (MongoDB, Express, React, Node.js) stack application providing a comprehensive transaction dashboard. Users can view and interact with transaction data through various APIs and frontend components, including features like data initialization, transaction listing, statistical analysis, and data visualization.
+
+*"Empowering businesses with insightful transaction analysis through cutting-edge technology."*
 
 ## Table of Contents
 
 - [Features](#features)
+- [Demo Video](#demo-video)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Frontend Components](#frontend-components)
 - [Technologies Used](#technologies-used)
+- [License](#license)
 
 ## Features
 
-- **Backend:**
-  - Initialize database with seed data from an external JSON source.
-  - List transactions with search and pagination functionality.
-  - Provide statistical data for a selected month (total sale amount, total sold items, total not sold items).
-  - Provide data for bar chart (number of items in specified price ranges).
-  - Provide data for pie chart (unique categories and the number of items in each category).
-  - Combined API for a consolidated JSON response.
+### Backend
 
-- **Frontend:**
-  - Display transactions in a table with search and pagination functionality.
-  - Show statistical data (total sale amount, total sold items, total not sold items).
-  - Display bar chart for item price ranges.
-  - Display pie chart for item categories.
-  - Use Chakra UI for styling.
+- **Initialize Database**: Seed the database from an external JSON source.
+- **List Transactions**: View transactions with search and pagination.
+- **Statistical Data**: Retrieve monthly statistics (total sales, sold items, unsold items).
+- **Bar Chart Data**: Get item counts within specified price ranges.
+- **Pie Chart Data**: Fetch data for item categories and their counts.
+- **Combined API**: Consolidated JSON response for comprehensive data.
+
+### Frontend
+
+- **Transactions Table**: Display transactions with search and pagination.
+- **Statistics Display**: Show total sales, sold items, and unsold items.
+- **Bar Chart**: Visualize item counts within price ranges.
+- **Pie Chart**: Visualize item categories.
+- **Styling**: Polished and responsive design with Chakra UI.
+
+## Demo Video
+
+[Watch the video](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
 ## Prerequisites
 
@@ -37,24 +47,12 @@ This project is a MERN (MongoDB, Express, React, Node.js) stack application that
 
 ## Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
+
    ```bash
-   git clone https://github.com/your-username/mern-transaction-dashboard.git
-   cd mern-transaction-dashboard
-2. Install backend dependencies:
-```bash
-cd backend
-npm install
-3. Create a .env file in the backend directory and add the following environment variables:
-```bash
-PORT = 8080
-MONGO_URI=mongodb://localhost:27017/transactiondb
-4. Install frontend dependencies:
-```cd ../frontend
-npm install
+   git clone https://github.com/yogeshmasaistudent/Roxiler-Systems-Assigment.git
+   cd Roxiler-Systems-Assigment
 
-###Usage:
-1. Start the backend server:
-```cd backend
-npm start
-
+2. **Install backend dependencies:
+ cd backend
+npm install
