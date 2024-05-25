@@ -4,18 +4,6 @@ This project is a MERN (MongoDB, Express, React, Node.js) stack application prov
 
 *"Empowering businesses with insightful transaction analysis through cutting-edge technology."*
 
-## Table of Contents
-
-- [Features](#features)
-- [Demo Video](#demo-video)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Frontend Components](#frontend-components)
-- [Technologies Used](#technologies-used)
-- [License](#license)
-
 ## Features
 
 ### Backend
@@ -39,11 +27,14 @@ This project is a MERN (MongoDB, Express, React, Node.js) stack application prov
 
 [Watch the video](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
-## Prerequisites
 
-- Node.js (v14.x or later)
-- npm (v6.x or later)
-- MongoDB (v4.x or later)
+### Deployed Links
+
+-**Frontend Deployed Link:** (https://roxiler-systems-assigment-y7yo.vercel.app/).
+
+-**Backend Deployed Link:** (https://roxiler-systems-assigment-1.onrender.com/).
+
+
 
 ## Installation
 
@@ -51,8 +42,7 @@ This project is a MERN (MongoDB, Express, React, Node.js) stack application prov
 
    ```bash
    git clone https://github.com/yogeshmasaistudent/Roxiler-Systems-Assigment.git
-   cd Roxiler-Systems-Assigment
+   cd Roxiler-Systems-Assigment;
 
-2. **Install backend dependencies:
- cd backend
-npm install
+2. **Install backend and frontend dependencies**
+
