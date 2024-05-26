@@ -25,7 +25,7 @@ This project is a MERN (MongoDB, Express, React, Node.js) stack application prov
 
 ## Demo Video
 
-[Watch the video](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[Watch the video](https://drive.google.com/file/d/1szXnX4DkZVEOkD6HDl6SKk1oXJkNVx4P/view?usp=sharing)
 
 
 ### Deployed Links
