@@ -50,7 +50,7 @@ const Staticdata = () => {
       <div className="Static-container">
         <div className="controls">
           <div className="static">
-            <h3>Statics - {month}</h3>
+            <h3 style={{ color: "#4A90E2" }}>Statics - {month}</h3>
           </div>
 
           <select
@@ -59,8 +59,7 @@ const Staticdata = () => {
             className="month-select"
             style={{
               backgroundColor: "#EDF6F6",
-              width: "80px",
-              height: "50px",
+              marginTop:"30px"
             }}
           >
             {monthNames.map((m) => (
@@ -83,8 +82,6 @@ const Staticdata = () => {
           )}
         </div>
       </div>
-
-    
     </div>
   );
 };

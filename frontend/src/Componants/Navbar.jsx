@@ -4,8 +4,8 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <NavLink to="/" exact activeClassName="active">
+    <nav className="navbar" aria-label="Main Navigation">
+      <NavLink to="/" exact activeClassName="active" aria-current="page">
         Roxiler Systems
       </NavLink>
       <NavLink to="/dashboard" activeClassName="active">

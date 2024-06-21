@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Bar } from "react-chartjs-2";
 import Chart from "chart.js/auto";
+import "./BarChart.css"; // Import the external CSS file
 
-const BasicChart = () => {
+const BarChart = () => {
   const [selectedMonth, setSelectedMonth] = useState(3); // Default month to March
   const [barChartData, setBarChartData] = useState([]);
 
@@ -87,15 +88,16 @@ const BasicChart = () => {
   };
 
   return (
-    <div style={{ width: "80%", margin: "auto" }}>
-      <div style={{ marginBottom: "20px" }}>
-        <label htmlFor="month-select" style={{ marginRight: "10px" }}>
+    <div className="chart-container">
+      <div className="month-select-container">
+        <label htmlFor="month-select" className="month-select-label">
           Select Month:
         </label>
         <select
           id="month-select"
           value={selectedMonth}
           onChange={handleMonthChange}
+          className="month-select"
         >
           {months.map((month) => (
             <option key={month.value} value={month.value}>
@@ -104,12 +106,12 @@ const BasicChart = () => {
           ))}
         </select>
       </div>
-      <h2 style={{ textAlign: "center" }}>Bar Chart</h2>
-      <div style={{ height: "400px" }}>
+      <h2 className="chart-title">Bar Chart</h2>
+      <div className="chart-wrapper">
         <Bar data={chartData} options={options} />
       </div>
     </div>
   );
 };
 
-export default BasicChart;
+export default BarChart;

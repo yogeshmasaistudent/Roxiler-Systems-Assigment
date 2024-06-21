@@ -4,7 +4,7 @@ import "./App.css";
 import Navbar from "./Componants/Navbar";
 import { Route, Router, Routes } from "react-router-dom";
 import Staticdata from "./Componants/Staticdata";
-import BasicChart from "./Componants/BasicChart";
+import BasicChart from "./Componants/BarChart";
 import PieChart from "./Componants/PieChart";
 
 

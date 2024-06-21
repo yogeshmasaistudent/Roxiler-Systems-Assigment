@@ -7,6 +7,8 @@ function TransactionsTable() {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
 
+
+
   const monthNames = [
     "January",
     "February",
@@ -65,22 +67,8 @@ function TransactionsTable() {
 
   return (
     <div className="transactions-container">
-      <div
-        style={{
-          width: "15%",
-          border: "1px solid blue",
-          borderRadius: "90%",
-          margin: "auto",
-          marginTop: "2.5px",
-          paddingTop: "14px",
-          paddingBottom: "14px",
-          backgroundColor: "white",
-        }}
-      >
-        <h2 style={{ textAlign: "center" }}>
-          Transaction
-          <br></br>Dashboard
-        </h2>
+      <div className="header">
+        <h2>Transaction Dashboard</h2>
       </div>
       <div className="transactions-controls">
         <select
@@ -123,7 +111,7 @@ function TransactionsTable() {
               <td>{transaction.description}</td>
               <td>{transaction.price}</td>
               <td>{transaction.dateOfSale}</td>
-              <td>
+              <td className="image-cover">
                 <img
                   src={transaction.image}
                   alt={transaction.title}
@@ -136,21 +124,17 @@ function TransactionsTable() {
       </table>
 
       <div className="pagination-controls">
-        <p>Page Number: {page}</p>
-        <div>
-          <button
-            onClick={handlePreviousPage}
-            disabled={page === 1}
-            className="pagination-button"
-          >
-            Previous
-          </button>
-          <span>{page}</span>
-          <button onClick={handleNextPage} className="pagination-button">
-            Next
-          </button>
-        </div>
-        <p>Per page: 10</p>
+        <button
+          onClick={handlePreviousPage}
+          disabled={page === 1}
+          className="pagination-button"
+        >
+          Previous
+        </button>
+        <span className="page-number">{page}</span>
+        <button onClick={handleNextPage} className="pagination-button">
+          Next
+        </button>
       </div>
     </div>
   );

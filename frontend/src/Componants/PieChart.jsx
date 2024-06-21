@@ -51,7 +51,12 @@ const PieChart = () => {
 
   return (
     <div className="pie-chart-container">
-      <select onChange={handleMonthChange} value={selectedMonth}>
+      <h2 className="chart-title">Monthly Sales Breakdown</h2>
+      <select
+        className="select-month"
+        onChange={handleMonthChange}
+        value={selectedMonth}
+      >
         <option value={1}>January</option>
         <option value={2}>February</option>
         <option value={3}>March</option>
@@ -68,14 +73,13 @@ const PieChart = () => {
       <div className="pie-chart-wrapper">
         <Pie data={chartData} options={chartOptions} className="PieChart" />
       </div>
-
-       <div>
-        {data.map((item)=>{
-          <>
-            <p1>{item.count}</p1>
-          </>
-        })}
-       </div>
+      {/* <div className="data-list">
+        {data.map((item, index) => (
+          <p key={index} className="data-list-item">
+            {item.category}: {item.count}
+          </p>
+        ))}
+      </div> */}
     </div>
   );
 };
